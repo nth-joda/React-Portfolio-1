@@ -74,8 +74,8 @@ section > h2 {
   margin-bottom: 3rem;
 }
 
-text-light {
-  color: var(color-light);
+.text-light {
+  color: var(--color-light);
 }
 
 a {
