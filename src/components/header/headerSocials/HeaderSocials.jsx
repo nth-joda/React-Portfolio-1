@@ -5,7 +5,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import "./headerSocials.css";
 const HeaderSocials = () => {
   return (
-    <div className="header_socials">
+    <div className="header__socials">
       <a href="linkedin.com/in/hau-nguyen-trung-8a776a211" target="_blank">
         <FaLinkedin />
       </a>
