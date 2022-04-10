@@ -38,14 +38,22 @@
 /* ========== Media Queries (MEDIUM DEVICES): ========== */
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    height: 75vh;
+  }
+  .header__container {
+    height: 72vh;
+    padding-top: 5rem;
   }
 }
 
 /* ========== Media Queries (SMALL DEVICES): ========== */
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 80vh;
+  }
+  .header__container {
+    height: 80vh;
+    padding-top: 3rem;
   }
 
   .header__social,
