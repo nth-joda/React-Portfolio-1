@@ -1,7 +1,11 @@
+.about__content {
+  height: max-content;
+}
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
+  height: max-content;
 }
 
 .about__me {
@@ -76,6 +80,7 @@
   .container {
     padding-top: 3rem !important;
   }
+
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
@@ -85,7 +90,7 @@
     margin: 0rem auto 2rem;
   }
   .about__content {
-    margin-top: -6rem;
+    margin-top: 3rem;
   }
   .about__content p {
     margin: 1.5rem 0 2rem;
