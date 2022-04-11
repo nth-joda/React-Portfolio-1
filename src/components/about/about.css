@@ -77,10 +77,6 @@
 
 /* ========== Media Queries (MEDIUM DEVICES): ========== */
 @media screen and (max-width: 1024px) {
-  .container {
-    padding-top: 3rem !important;
-  }
-
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
@@ -103,10 +99,6 @@
 
 /* ========== Media Queries (SMALL DEVICES): ========== */
 @media screen and (max-width: 600px) {
-  .container {
-    padding-top: 1rem !important;
-  }
-
   .about__me {
     width: 70%;
     display: block;
