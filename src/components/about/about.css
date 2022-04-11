@@ -5,7 +5,8 @@
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
-  height: max-content;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .about__me {
@@ -21,6 +22,7 @@
   display: grid;
   place-items: center;
   margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 .about__me-img {
@@ -80,10 +82,12 @@
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .about__me {
     width: 60%;
-    margin: 0rem auto 2rem;
+    margin: 2rem auto;
   }
   .about__content {
     margin-top: 3rem;
