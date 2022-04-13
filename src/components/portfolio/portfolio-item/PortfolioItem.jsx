@@ -1,5 +1,6 @@
 import React from "react";
 
+import "./portfolioItem.css";
 const PortfolioItem = (props) => {
   return (
     <div>
