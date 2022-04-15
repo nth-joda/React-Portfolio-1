@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 import ContactOption from "./contactOption/ContactOption";
 import "./contact.css";
+
+const email_service_id = "service_kpeo4ci";
+const email_template_id = "template_fla4syl";
+const user_public_key = "jpI8UgiNE1WR5ecfL";
 
 const contacts = [
   {
@@ -25,6 +30,35 @@ const contacts = [
 ];
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        email_service_id,
+        email_template_id,
+        form.current,
+        user_public_key
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          emailjs.sendForm(
+            email_service_id,
+            email_template_id,
+            form.current,
+            user_public_key
+          );
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -36,7 +70,7 @@ const Contact = () => {
           ))}
         </div>
         {/* ============= END OF CONTACT OPTIONS ============= */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <div className="input-item">
             <label htmlFor="name">Your Name:</label>
             <input
@@ -59,7 +93,7 @@ const Contact = () => {
           <div className="input-item">
             <label htmlFor="phoneno">Your Phone Number:</label>
             <input
-              type="number"
+              type="tel"
               name="phoneno"
               placeholder="Could I get your phone number ?"
             />

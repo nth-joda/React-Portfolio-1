@@ -9,6 +9,12 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  text-align: center;
+  justify-content: center;
+}
+.contact__options article {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ========== FORM ========== */
