@@ -3,8 +3,10 @@ import "./about.css";
 
 import { FaAward, FaUserFriends } from "react-icons/fa";
 import { AiTwotoneFolderOpen } from "react-icons/ai";
+import { IoMdSchool } from "react-icons/io";
+import { CgMenuGridO } from "react-icons/cg";
 
-import ME from "../../assets/me-about.jpg";
+import ME from "../../assets/portfo11.jpg";
 
 const About = () => {
   return (
@@ -23,26 +25,28 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>6+ Months Internship</small>
             </article>
 
             <article className="about__card">
-              <FaUserFriends className="about__icon" />
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <IoMdSchool className="about__icon" />
+              <h5>Education</h5>
+              <small>3.82/4.00 GPA</small>
             </article>
 
             <article className="about__card">
-              <AiTwotoneFolderOpen className="about__icon" />
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <CgMenuGridO className="about__icon" />
+              <h5>Fields</h5>
+              <small>Web, AI/ML, Mobile/Desktop</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
-            facere temporibus quia, commodi ea dolores in assumenda rem ipsum
-            provident mollitia! Quidem optio asperiores recusandae repudiandae
-            quisquam, fugit debitis odio!
+            I am a student at University of Science in Ho Chi Minh city,
+            majoring in Computer Science, and having experience of working with
+            web development and AI/ML applications. As an under-graduated
+            student, I am always open to study and work on new technologies and
+            environments. I am aiming to be a full-stack developer on
+            graduation.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

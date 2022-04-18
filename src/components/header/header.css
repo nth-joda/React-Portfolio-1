@@ -7,15 +7,15 @@
 
 /* ======== IMG: AVATAR ME ======== */
 .me {
-  background: linear-gradient(var(--color-primary), transparent);
+  background: var(--color-opacity-bg);
   width: 22rem;
   left: calc(50% - 11rem);
   height: 30rem;
   position: absolute;
   margin-top: 4rem;
-  border-radius: 12rem 12rem 0 0;
+  border-radius: 2rem;
   overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.5rem;
   object-fit: cover;
   object-position: 0 0;
 }

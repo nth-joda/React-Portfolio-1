@@ -10,6 +10,11 @@ footer a {
   color: var(--color-bg);
 }
 
+footer > a:hover {
+  color: var(--color-bg);
+  font-size: 3rem;
+}
+
 .footer__logo {
   font-size: 2rem;
   font-weight: 500;
@@ -25,6 +30,10 @@ footer a {
   margin: 0 auto 3rem;
 }
 
+.permalinks a:hover {
+  color: var(--color-bg);
+  font-size: 1.5rem;
+}
 .footer__socials {
   display: flex;
   justify-content: center;

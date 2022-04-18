@@ -41,7 +41,7 @@ const Nav = () => {
       >
         <RiUserStarLine />
       </a>
-      <a
+      {/* <a
         onClick={() => {
           setActiveNav("#services");
         }}
@@ -49,7 +49,7 @@ const Nav = () => {
         href="#services"
       >
         <RiServiceLine />
-      </a>
+      </a> */}
       <a
         onClick={() => {
           setActiveNav("#contact");

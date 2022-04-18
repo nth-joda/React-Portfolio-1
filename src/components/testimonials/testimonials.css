@@ -1,7 +1,7 @@
 .container.testimonials__container {
   width: 40%;
   padding: 1rem 1rem 2.5rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 1.5rem;
 }
 
@@ -13,6 +13,18 @@
 .swiper-button-prev {
   margin-left: 2rem;
   margin-top: -3rem;
+}
+
+.swiper-notification {
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--color-bg-variant, var(--color-bg-variant));
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary, var(--color-primary));
 }
 
 /* ========== Media Queries (MEDIUM DEVICES): ========== */

@@ -19,7 +19,6 @@ const Experience = () => {
                 <small className="text-light">Experienced</small>
               </div>
             </article>
-
             {/* Skill: CSS */}
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
@@ -28,7 +27,6 @@ const Experience = () => {
                 <small className="text-light">Intermediate</small>
               </div>
             </article>
-
             {/* Skill: Javascript */}
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
@@ -37,25 +35,22 @@ const Experience = () => {
                 <small className="text-light">Experienced</small>
               </div>
             </article>
-
-            {/* Skill: Bootstrap */}
+            {/* Skill: Java */}
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
-                <h4>Bootstrap</h4>
+                <h4>Java</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
-
             {/* Skill: Tailwind */}
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
               <div>
-                <h4>Tailwind</h4>
+                <h4>Angular</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
-
             {/* Skill: React */}
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icons" />
@@ -73,59 +68,59 @@ const Experience = () => {
           <div className="experience__backend">
             <h3>Backend Development</h3>
             <div className="experience__content">
-              {/* Skill: HTML */}
+              {/* Skill: Python */}
               <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icons" />
                 <div>
-                  <h4>HTML</h4>
+                  <h4>Python</h4>
                   <small className="text-light">Experienced</small>
                 </div>
               </article>
 
               {/* Skill: CSS */}
-              <article className="experience__details">
+              {/* <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icons" />
                 <div>
                   <h4>CSS</h4>
                   <small className="text-light">Intermediate</small>
                 </div>
-              </article>
+              </article> */}
 
               {/* Skill: Javascript */}
-              <article className="experience__details">
+              {/* <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icons" />
                 <div>
                   <h4>Javascript</h4>
                   <small className="text-light">Experienced</small>
                 </div>
-              </article>
+              </article> */}
 
               {/* Skill: Bootstrap */}
-              <article className="experience__details">
+              {/* <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icons" />
                 <div>
                   <h4>Bootstrap</h4>
                   <small className="text-light">Experienced</small>
                 </div>
-              </article>
+              </article> */}
 
               {/* Skill: Tailwind */}
-              <article className="experience__details">
+              {/* <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icons" />
                 <div>
                   <h4>Tailwind</h4>
                   <small className="text-light">Experienced</small>
                 </div>
-              </article>
+              </article> */}
 
               {/* Skill: React */}
-              <article className="experience__details">
+              {/* <article className="experience__details">
                 <BsPatchCheckFill className="experience__details-icons" />
                 <div>
                   <h4>React</h4>
                   <small className="text-light">Experienced</small>
                 </div>
-              </article>
+              </article> */}
             </div>
           </div>
         </div>
