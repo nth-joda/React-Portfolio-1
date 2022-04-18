@@ -1,0 +1,105 @@
+.container.contact__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+  justify-content: center;
+}
+.contact__options article {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========== FORM ========== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  color: var(--color-white);
+  resize: none;
+}
+
+label {
+  margin-left: 0.8rem;
+  margin-bottom: 0.3rem;
+  display: inline-block;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========== Media Queries (MEDIUM DEVICES): ========== */
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    width: 80%;
+    display: block;
+  }
+
+  .contact__options {
+    flex-direction: row;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+  form::before {
+    content: "Direct Message";
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border: none;
+    text-align: center;
+    color: var(--color-light);
+    font-size: 1.5rem;
+  }
+
+  input,
+  textarea {
+    background: transparent;
+  }
+}
+
+/* ========== Media Queries (SMALL DEVICES): ========== */
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: 90%;
+  }
+  form {
+    border-radius: 0.5rem;
+  }
+  .contact__options {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .contact__options::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: var(--color-light);
+    margin: 2rem auto;
+  }
+}
