@@ -31,6 +31,7 @@ const data = [
     image: PORTFO3,
     title:
       "FamiFilm - Film management for family members. Default account: {admin@gmail.com} - {admin123}",
+    github: "https://github.com/nth-joda/fami-web",
     demo: "https://fami-web.vercel.app/",
   },
 ];
