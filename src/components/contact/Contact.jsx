@@ -51,6 +51,7 @@ const Contact = () => {
             form.current,
             user_public_key
           );
+          alert("Message sent.");
         },
         (error) => {
           console.log(error.text);
@@ -72,7 +73,9 @@ const Contact = () => {
         {/* ============= END OF CONTACT OPTIONS ============= */}
         <form ref={form} onSubmit={sendEmail}>
           <div className="input-item">
-            <label htmlFor="name">Your Name:</label>
+            <label htmlFor="name">
+              Your Name<span className="required-field">(*)</span>:
+            </label>
             <input
               type="text"
               name="name"
@@ -100,7 +103,9 @@ const Contact = () => {
           </div>
 
           <div className="input-item">
-            <label htmlFor="message">Your Message:</label>
+            <label htmlFor="message">
+              Your Message<span className="required-field">(*)</span>:
+            </label>
             <textarea
               name="message"
               rows="7"

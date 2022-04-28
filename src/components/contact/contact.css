@@ -48,6 +48,13 @@ button {
   margin-right: auto;
 }
 
+.required-field {
+  color: red !important;
+  font-size: 2;
+  font-weight: 800;
+  margin-left: 5px;
+}
+
 /* ========== Media Queries (MEDIUM DEVICES): ========== */
 @media screen and (max-width: 1024px) {
   .container.contact__container {
