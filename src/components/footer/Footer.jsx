@@ -42,7 +42,7 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://fb.com/nthau2000" target="_blank">
+        <a href="https://fb.com/nthau.2k" target="_blank">
           <FaFacebookSquare />
         </a>
         <a
