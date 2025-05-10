@@ -4,6 +4,19 @@
   padding: 1.2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  h3 {
+    margin: 0.5rem 0.2rem !important;
+    padding: 0;
+  }
+  .project_date {
+    color: #fff;
+    margin-bottom: 0;
+    text-align: right;
+  }
+  .port_desc {
+    color: #fff !important;
+    font-size: 0.8rem !important;
+  }
 }
 
 .portfolio__item:hover {
@@ -14,6 +27,7 @@
 .portfolio__item-img {
   border-radius: 1rem;
   overflow: hidden;
+  max-height: 13rem;
 }
 
 .portfolio__item h3 {
@@ -23,5 +37,5 @@
 .portfolio__item-cta {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0.2rem;
 }

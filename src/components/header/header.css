@@ -3,6 +3,38 @@
   position: relative;
   height: 95vh;
   padding-top: 7rem;
+
+  .textwritter {
+    display: flex;
+    justify-content: center;
+  }
+  .textwritter p {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    /* the cursor */
+    border-right: 1px solid;
+    animation: typing 3s steps(22) forwards, blink 1s step-end infinite;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* ======== IMG: AVATAR ME ======== */
@@ -10,10 +42,10 @@
   background: var(--color-opacity-bg);
   width: 22rem;
   left: calc(50% - 11rem);
-  height: 30rem;
+  height: 22rem;
   position: absolute;
   margin-top: 4rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   overflow: hidden;
   padding: 1.5rem;
   object-fit: cover;

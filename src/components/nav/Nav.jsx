@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineBadge } from "react-icons/md";
 import { GiRotaryPhone } from "react-icons/gi";
-import { RiUserStarLine, RiServiceLine } from "react-icons/ri";
+import { RiUserStarLine } from "react-icons/ri";
 
 import "./nav.css";
 

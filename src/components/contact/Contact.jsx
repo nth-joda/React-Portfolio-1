@@ -19,13 +19,13 @@ const contacts = [
     id: 2,
     contactType: "Facebook",
     detail: "Nguyễn Trung Hậu",
-    link: "https://fb.com/nthau2000",
+    link: "https://fb.com/nthau.2k",
   },
   {
     id: 3,
     contactType: "Zalo",
     detail: "Hau Nt",
-    link: "https://zalo.me/0328289727",
+    link: "https://zaloapp.com/qr/p/v8awg3k0wb4z",
   },
 ];
 
