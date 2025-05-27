@@ -4,7 +4,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { SiZalo } from "react-icons/si";
 
 import "./contactOption.css";
-const ContactOption = React.memo((props) => {
+const ContactOption = (props) => {
   return (
     <article className="contact__option">
       {props.contact.contactType === "Email" && (
@@ -41,5 +41,5 @@ const ContactOption = React.memo((props) => {
       )}
     </article>
   );
-});
+};
 export default ContactOption;

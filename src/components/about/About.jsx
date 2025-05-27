@@ -1,8 +1,7 @@
 import React from "react";
 import "./about.css";
 
-import { FaAward, FaUserFriends } from "react-icons/fa";
-import { AiTwotoneFolderOpen } from "react-icons/ai";
+import { FaAward } from "react-icons/fa";
 import { IoMdSchool } from "react-icons/io";
 import { CgMenuGridO } from "react-icons/cg";
 
@@ -10,9 +9,12 @@ import ME from "../../assets/cover_pic.jpg";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className="about__section">
+      <div className="about__dynamic-bg"></div>
       <h5>Get to know</h5>
-      <h2>About Me</h2>
+      <h2>
+        <span className="about__typing">About Me</span>
+      </h2>
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-img">

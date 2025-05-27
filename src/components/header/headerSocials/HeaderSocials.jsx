@@ -20,4 +20,4 @@ const HeaderSocials = () => {
   );
 };
 
-export default React.memo(HeaderSocials);
+export default HeaderSocials;
