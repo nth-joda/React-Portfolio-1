@@ -5,8 +5,8 @@ import "./cta.css";
 const CTA = () => {
   return (
     <div className="cta">
-      <a href={CV} className="btn" target="_blank" rel="noopener noreferrer">
-        View CV
+      <a href={CV} download className="btn">
+        Download CV
       </a>
       <a href="#contact" className="btn btn-primary">
         Let's Talk

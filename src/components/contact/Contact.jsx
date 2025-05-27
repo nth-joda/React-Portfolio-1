@@ -1,12 +1,9 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-
 import ContactOption from "./contactOption/ContactOption";
 import "./contact.css";
 
-const email_service_id = "service_kpeo4ci";
-const email_template_id = "template_fla4syl";
-const user_public_key = "jpI8UgiNE1WR5ecfL";
+// const email_service_id = "service_kpeo4ci";
+// const email_template_id = "template_fla4syl";
+// const user_public_key = "jpI8UgiNE1WR5ecfL";
 
 const contacts = [
   {
@@ -30,35 +27,35 @@ const contacts = [
 ];
 
 const Contact = () => {
-  const form = useRef();
+  // const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        email_service_id,
-        email_template_id,
-        form.current,
-        user_public_key
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          emailjs.sendForm(
-            email_service_id,
-            email_template_id,
-            form.current,
-            user_public_key
-          );
-          alert("Message sent.");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
+  //   emailjs
+  //     .sendForm(
+  //       email_service_id,
+  //       email_template_id,
+  //       form.current,
+  //       user_public_key
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         emailjs.sendForm(
+  //           email_service_id,
+  //           email_template_id,
+  //           form.current,
+  //           user_public_key
+  //         );
+  //         alert("Message sent.");
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  //   e.target.reset();
+  // };
 
   return (
     <section id="contact">
@@ -70,7 +67,7 @@ const Contact = () => {
             <ContactOption contact={item} key={item.id} />
           ))}
         </div>
-        {/* ============= END OF CONTACT OPTIONS ============= */}
+        {/* ============= END OF CONTACT OPTIONS =============
         <form ref={form} onSubmit={sendEmail}>
           <div className="input-item">
             <label htmlFor="name">
@@ -116,7 +113,7 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send message
           </button>
-        </form>
+        </form> */}
       </div>
     </section>
   );
