@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { MdOutlineBadge } from "react-icons/md";
 import { GiRotaryPhone } from "react-icons/gi";
@@ -8,34 +8,26 @@ import "./nav.css";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
-  // const switchActiveState = (activeState) => {
-  //   setActiveState(activeState);
-  // };
+  const handleSetActiveNav = useCallback((nav) => setActiveNav(nav), []);
 
   return (
     <nav>
       <a
         className={activeNav === "#" ? "active" : ""}
-        onClick={() => {
-          setActiveNav("#");
-        }}
+        onClick={() => handleSetActiveNav("#")}
         href="#"
       >
         <AiOutlineHome />
       </a>
       <a
         href="#about"
-        onClick={() => {
-          setActiveNav("#about");
-        }}
+        onClick={() => handleSetActiveNav("#about")}
         className={activeNav === "#about" ? "active" : ""}
       >
         <MdOutlineBadge />
       </a>
       <a
-        onClick={() => {
-          setActiveNav("#experience");
-        }}
+        onClick={() => handleSetActiveNav("#experience")}
         className={activeNav === "#experience" ? "active" : ""}
         href="#experience"
       >
@@ -51,9 +43,7 @@ const Nav = () => {
         <RiServiceLine />
       </a> */}
       <a
-        onClick={() => {
-          setActiveNav("#contact");
-        }}
+        onClick={() => handleSetActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
         href="#contact"
       >

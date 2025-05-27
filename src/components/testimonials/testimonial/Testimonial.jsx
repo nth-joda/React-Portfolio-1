@@ -1,6 +1,6 @@
 import React from "react";
 import "./testimonial.css";
-const Testimonial = (props) => {
+const Testimonial = React.memo((props) => {
   return (
     <article className="testimonial">
       <div className="client__avatar">
@@ -10,6 +10,6 @@ const Testimonial = (props) => {
       <small className="client__review">{props.data.review}</small>
     </article>
   );
-};
+});
 
 export default Testimonial;

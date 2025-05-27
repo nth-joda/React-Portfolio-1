@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./portfolioItem.css";
-const PortfolioItem = (props) => {
+const PortfolioItem = React.memo((props) => {
   return (
     <div>
       <article className="portfolio__item">
@@ -37,6 +37,6 @@ const PortfolioItem = (props) => {
       </article>
     </div>
   );
-};
+});
 
 export default PortfolioItem;

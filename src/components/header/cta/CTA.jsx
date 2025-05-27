@@ -2,7 +2,7 @@ import React from "react";
 import CV from "../../../assets/NguyenTrungHau_SoftwareEngineer.pdf";
 
 import "./cta.css";
-const CTA = () => {
+const CTA = React.memo(() => {
   return (
     <div className="cta">
       <a href={CV} download className="btn">
@@ -13,6 +13,6 @@ const CTA = () => {
       </a>
     </div>
   );
-};
+});
 
 export default CTA;
